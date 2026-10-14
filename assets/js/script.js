@@ -19,3 +19,25 @@ for (let i = names.length; i >= 0; i--) {
 for(const name of names){
     console.log(names);
 }
+
+const user = {
+    name: `Mario`,
+    surname: `Red`,
+    age: 25,
+    active: true,
+    address:{
+        street:`Via Roma`,
+        number: 20,
+        city: `Roma`,
+    }
+};
+
+for (const key in user) {
+    if (key === "address") {
+        for (const subKey in user.address) {
+            console.log(`${subKey} = ${user.address[subKey]}`);
+        }
+    } else {
+        console.log(`${key} = ${user[key]}`);
+    }
+}
