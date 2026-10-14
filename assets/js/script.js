@@ -131,6 +131,15 @@ console.log(nomi)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const personaggiFemminili = [];
+
+for (let i = 0; i < starWarsCharacters.length; i++)
+    if (starWarsCharacters[i].gender === 'female') {
+        { personaggiFemminili.push(starWarsCharacters[i].name) }
+    }
+
+console.log(personaggiFemminili)
+
 /* ESERCIZIO 3 — Oggetto raggruppamento
    Crea perColoreOcchi con chiavi: blue, yellow, brown, red, blue-gray (con trattino).
    Ognuna con un array vuoto.
