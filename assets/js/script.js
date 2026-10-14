@@ -41,6 +41,7 @@ for (const key in user) {
         console.log(`${key} = ${user[key]}`);
     }
 }
+
 console.log('----DO/WHILE----');
 let x = 11;
 do {
